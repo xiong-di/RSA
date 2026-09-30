@@ -147,6 +147,7 @@ parser.add_argument(
 args = parser.parse_args()
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
 
+
 if args.dataset == "vggsound":
     args.n_class = 309
 elif args.dataset == "ks50":

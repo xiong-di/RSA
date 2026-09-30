@@ -151,7 +151,6 @@ def train_model(model, optimizer, ttaloader, args):
                 data_bar.set_description(
                     f"Batch#{i}:  ACC#{batch_acc:.2f}"
                 )
-
             epoch_acc = round(sum(batch_accs) / len(batch_accs), 2)
 
             print(f"Epoch{epoch}: all acc is {epoch_acc}")
