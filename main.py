@@ -308,7 +308,7 @@ val_audio_conf = {
 def traintta():
     for corr in corruption_list:
         seed_everything(seed=args.seed)  
-        print("### Seed= {} ###".format(args.seed))
+        print("##### Seed= {} #####".format(args.seed))
         if args.corruption_modality =="none":
             tta_loader_path=(os.path.join(args.json_root, f'severity_0.json'))
         else:
